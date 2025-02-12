@@ -32,4 +32,9 @@ describe('string-calculator', () => {
             "Invalid input: single number with delimiter",
         );
     });
+    it("should throw an error when negative numbers are passed", () => {
+        expect(() => add("//;\n1;-2;3;-4")).toThrow(
+            "negatives not allowed: -2, -4",
+        );
+    });
 });
