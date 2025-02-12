@@ -31,9 +31,16 @@ const add = (inputString) => {
   }
 
   const arr = inputString.split(delimiter);
+  const negativeNumbers = []
   const numberedArr = arr.map((num) => {
+        if (num < 0) {
+            negativeNumbers.push(num);
+        }
     return parseInt(num);
   });
+    if (negativeNumbers.length > 0) {
+        throw new Error(`negatives not allowed: ${negativeNumbers.join(", ")}`);
+ }
   return numberedArr.reduce((acc, cur) => acc + cur, 0);
    
 }
