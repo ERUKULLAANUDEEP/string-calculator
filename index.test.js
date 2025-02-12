@@ -15,4 +15,7 @@ describe('string-calculator', () => {
     it('should handle new lines and comma between numbered string', () => {
         expect(add('2\n2,3')).toBe(7);
     })
+    it('should handle custom delimiters', () => {
+        expect(add('//;\n1;2')).toBe(3);
+    })
 });
