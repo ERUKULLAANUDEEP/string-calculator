@@ -2,7 +2,7 @@ const add = (inputString) => {
   if(inputString === '') {
     return 0;
   }
-  const arr = inputString.split(',');
+  const arr = inputString.split(/[,\n]/);
   const numberedArr = arr.map((num) => {
     return parseInt(num);
   });
