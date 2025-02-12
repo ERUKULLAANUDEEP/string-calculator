@@ -1,0 +1,22 @@
+{
+  "name": "string-calculator",
+  "version": "1.0.0",
+  "description": "Implementation of string calculator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ERUKULLAANUDEEP/string-calculator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ERUKULLAANUDEEP/string-calculator/issues"
+  },
+  "homepage": "https://github.com/ERUKULLAANUDEEP/string-calculator#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
