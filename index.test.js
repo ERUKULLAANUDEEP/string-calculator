@@ -12,4 +12,7 @@ describe('string-calculator', () => {
     it('should return sum of comma separated numbers', () => {
         expect(add('3,4')).toBe(7);
     });
+    it('should handle new lines and comma between numbered string', () => {
+        expect(add('2\n2,3')).toBe(7);
+    })
 });
