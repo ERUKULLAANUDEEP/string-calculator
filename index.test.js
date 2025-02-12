@@ -27,4 +27,9 @@ describe('string-calculator', () => {
     it("should return the sum of numbers with multiple custom delimiters of any length", () => {
         expect(add("//[;;][##]\n4;;5##6")).toBe(15);
     });
+    it("should throw an error if a single number is passed with delimiter", () => {
+        expect(() => add("1\n")).toThrow(
+            "Invalid input: single number with delimiter",
+        );
+    });
 });
