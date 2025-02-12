@@ -8,10 +8,19 @@ function extracteDelimiter(delimiterPart) {
         return new RegExp(delimiterPart.replace(/[-\/\\^$*+?.()|[\]{}]/g, "\\$&"));
     }
 }
+
+const checkSingleNumberWithDelimiter = (inputString) => {
+    const regex = /^\d+[\n,;*#]$/; //This regex checks for a single number with a delimiter
+     if (regex.test(inputString)) {
+        throw new Error("Invalid input: single number with delimiter");
+    }
+}
+
 const add = (inputString) => {
   if(inputString === '') {
     return 0;
   }
+  checkSingleNumberWithDelimiter(inputString);
   let delimiter = /[,\n]/;
   const hasCustomDelimiter = inputString.startsWith("//");
   if (hasCustomDelimiter) {
