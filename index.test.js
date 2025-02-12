@@ -9,4 +9,7 @@ describe('string-calculator', () => {
     it('should return NAN for invalid string with a single number', () => {
         expect(add('a')).toBe(NaN);
     });
+    it('should return sum of comma separated numbers', () => {
+        expect(add('3,4')).toBe(7);
+    });
 });
