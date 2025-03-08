@@ -5,5 +5,5 @@ Custom delimiter will start with "//" : "//[delimiter]\n[numbers…]". For examp
 
 Calling add with a negative number will throw an exception: "negative numbers not allowed <negative_number>".
 
-To find how the input and output looks like, please go through index.test.js
+To find how the input and output looks like, please go through index.test.js..
 
